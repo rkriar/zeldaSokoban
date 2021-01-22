@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/house"
+    android:id="@+id/rLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#000000"
+        android:alpha="0.6"/>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnCount="9"
+        android:rowCount="15"></GridLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- settings, sound, etc menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back" />
+        <ImageButton
+            android:id="@+id/music"
+            android:onClick="musicbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/unmute"/>
+
+    </LinearLayout>
+    <!-- lives, coins, level -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/coin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/coin"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/coin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/coin"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/coin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/coin"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/heartful32" />
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/heartful32" />
+        <ImageView
+            android:id="@+id/heart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/heartful32" />
+
+    </LinearLayout>
+
+    <!-- undo button -->
+    <Button
+        android:onClick="undo"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="465dp"
+        android:alpha="0.7"
+        android:text="Undo"
+        android:background="#FDFD96"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <!-- reset button -->
+    <Button
+        android:onClick="reset"
+        android:background="#FDFD96"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="520dp"
+        android:alpha="0.7"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+    <!-- instructions button -->
+    <Button
+        android:onClick="inst"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:background="#FDFD96"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="575dp"
+        android:alpha="0.7"
+        android:text="Instructions"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <!-- down arrow button (invisible) -->
+    <Button
+        android:onClick="down"
+        android:id="@+id/down"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="515dp"
+        android:alpha="0"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <!-- up arrow button (invisible) -->
+    <Button
+        android:onClick="up"
+        android:id="@+id/up"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="395dp"
+        android:alpha="0"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+    <!-- left arrow button (invisible) -->
+    <Button
+        android:onClick="left"
+        android:id="@+id/left"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="460dp"
+        android:alpha="0"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <!-- right arrow button (invisible) -->
+    <Button
+        android:onClick="right"
+        android:id="@+id/right"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="460dp"
+        android:alpha="0"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <!-- control stick image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="420dp"
+        android:alpha="0.7"
+        android:background="@drawable/dpad1" />
+
+    <!-- Quest Pop ups-->
+
+    <ImageView
+        android:id="@+id/quest1"
+        android:onClick="quest1"
+        android:layout_height = "match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/quest1"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/quest2"
+        android:onClick="quest2"
+        android:layout_height = "match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/quest2"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/quest3"
+        android:onClick="quest3"
+        android:layout_height = "match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/quest3"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/quest4"
+        android:onClick="quest4"
+        android:layout_height = "match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/quest4"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/quest5"
+        android:onClick="quest5"
+        android:layout_height = "match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/quest5"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/dead"
+        android:onClick="dead"
+        android:layout_height = "match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/dead"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

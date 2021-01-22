@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background='@drawable/splash'>
+
+    <!-- Holds title background image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:alpha="0.6"/>
+
+    <!-- Title -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/logo2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp">
+
+        <!-- Play Button set up-->
+    <Button
+        android:onClick="play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FDFD96"
+        android:text="BEGIN" />
+
+        <!-- Instruction button set up -->
+        <Button
+            android:onClick="inst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#FDFD96"
+            android:text="INSTRUCTIONS" />
+
+    </LinearLayout>
+
+</RelativeLayout>

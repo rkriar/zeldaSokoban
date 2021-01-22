@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Adds  Background image
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ssedit"
+        android:scaleType="centerCrop" />-->
+
+    <!--Adds Spinner to hold User Character Options-->
+    <Spinner
+        android:id="@+id/char_sel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"></Spinner>
+
+    <!--Button to Game Screen Added-->
+    <Button
+        android:id="@+id/to_GS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:text="Let's Play!"
+        android:background="#FDFD96"
+        android:onClick="to_GS" />
+</RelativeLayout>
